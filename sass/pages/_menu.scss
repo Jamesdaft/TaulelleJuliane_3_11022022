@@ -3,7 +3,11 @@ main {
 }
 
 .banner {
-    height: 250px;
+    & img {
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
 .menu {
@@ -36,28 +40,81 @@ main {
             }
         }
         &__meals {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
             background-color: white;
+            overflow: hidden;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
             box-shadow: 3px 4px 7px 1px #cfcfcf;
             border-radius: 15px;
             margin-bottom: 15px;
-            padding-top: 10px;
-            padding-left: 15px;
-            padding-right: 15px;
-            padding-bottom: 10px;
-            &__title {
-                font-weight: bold;
-            }
-            &__description {
+            height: 80px;
+            width: 350px;
+            &__content {
                 display: flex;
                 flex-direction: row;
+                flex-wrap: wrap;
                 justify-content: space-between;
-                font-size: 13px;
-                & span {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 100%;
+                padding-top: 15px;
+                padding-left: 15px;
+                padding-bottom: 15px;
+                &__title {
                     font-weight: bold;
+                    width: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                &__description {
+                    font-size: 13px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+            &__price {
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                font-weight: bold;
+                padding-bottom: 15px;
+                padding-right: 15px;
+            }
+            &__check {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $color-tertiaire;
+                border-radius: 0px 15px 15px 0px;
+                color: white;
+                font-size: 30px;
+                height: 100%;
+                width: 30%;
+                margin-right: -93px;
+                transition: all 0.7s;
+            }
+            &:hover &__check {
+                margin-right: 0px;
+                .fa-circle-check {
+                    -webkit-animation: rotate-center 0.6s ease-in-out both;
+                    animation: rotate-center 0.6s ease-in-out both;
                 }
             }
         }
     }
+}
+
+.menu__category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .commander {

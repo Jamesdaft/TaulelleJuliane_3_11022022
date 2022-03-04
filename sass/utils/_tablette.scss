@@ -1,0 +1,28 @@
+@media screen and (min-width: 768px) {
+    .fonctionnement {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        &__title {
+            width: 100%;
+        }
+    }
+    .restaurants {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        &__title {
+            width: 100%;
+        }
+        &__card {
+            width: 300px;
+        }
+    }
+    .menu__category {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}

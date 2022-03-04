@@ -1,4 +1,13 @@
-@import './utils/_minireset';
-@import './pages/_home';
+@import './base/font';
+@import './base/minireset';
+@import './composants/colors';
+@import './composants/heart-anim';
+@import './composants/index-loader';
+@import './composants/menu-anim';
+@import './layout/etiquette';
+@import './layout/header';
+@import './layout/footer';
+@import './layout/header_menu';
+@import './pages/home';
 @import './pages/menu';
-@import './base/_font';
+@import './utils/tablette';

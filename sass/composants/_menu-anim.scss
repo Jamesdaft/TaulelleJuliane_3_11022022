@@ -1,0 +1,42 @@
+.menu__cards {
+    animation: anim_menu 2s;
+}
+
+@for $i from 1 through 3 {
+    .menu__cards:nth-child(#{$i}) {
+        animation-delay: 100ms * $i;
+    }
+}
+
+@keyframes anim_menu {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
