@@ -1,7 +1,5 @@
 .location {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     font-weight: bold;
     background-color: #eaeaea;
     box-shadow: inset -2px 2px 7px 1px #cfcfcf;
@@ -11,11 +9,9 @@
 }
 
 .explorer {
-    display: flex;
+    @include flex-center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #f6f6f6;
+    background-color: $color-background;
     &__title {
         text-align: center;
         font-size: 23px;
@@ -36,7 +32,7 @@
         font-size: 15px;
         background: linear-gradient($color-secondaire, $color-primaire);
         border: none;
-        box-shadow: 3px 4px 7px 1px #cfcfcf;
+        @include box-shadow;
         border-radius: 30px;
         padding: 15px 25px 15px 25px;
         margin-bottom: 50px;
@@ -62,11 +58,11 @@
         flex-direction: row;
         align-items: center;
         overflow: visible;
-        background-color: #f6f6f6;
+        background-color: $color-background;
         border-radius: 20px;
         padding: 20px;
         margin-bottom: 20px;
-        box-shadow: 3px 4px 7px 1px #cfcfcf;
+        @include box-shadow;
         &:hover {
             background-color: lighten($color-primaire, 30%);
             & i {
@@ -75,10 +71,8 @@
         }
     }
     & span {
-        display: flex;
+        @include flex-center;
         text-align: center;
-        align-items: center;
-        justify-content: center;
         position: relative;
         left: -30px;
         color: white;
@@ -104,7 +98,7 @@
     padding-bottom: 60px;
     display: flex;
     flex-direction: column;
-    background-color: #f6f6f6;
+    background-color: $color-background;
     &__title {
         font-size: 23px;
         font-weight: bold;
@@ -118,7 +112,7 @@
         position: relative;
         border-radius: 15px;
         background-color: white;
-        box-shadow: 3px 4px 7px 1px #cfcfcf;
+        @include box-shadow;
         margin-bottom: 20px;
         width: 100%;
         &__span {
@@ -141,9 +135,7 @@
                 font-weight: bold;
             }
             &__heart {
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                @include flex-center;
                 padding-right: 20px;
             }
         }
