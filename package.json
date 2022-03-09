@@ -2,7 +2,6 @@
     "name": "taulellejuliane_3_11022022",
     "version": "1.0.0",
     "description": "Taulelle Juliane Projet 3 ",
-    "main": "index.js",
     "scripts": {
         "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
     },
@@ -15,5 +14,8 @@
     "bugs": {
         "url": "https://github.com/Jamesdaft/TaulelleJuliane_3_11022022/issues"
     },
-    "homepage": "https://github.com/Jamesdaft/TaulelleJuliane_3_11022022#readme"
+    "homepage": "https://github.com/Jamesdaft/TaulelleJuliane_3_11022022#readme",
+    "devDependencies": {
+        "sass": "^1.49.9"
+    }
 }
