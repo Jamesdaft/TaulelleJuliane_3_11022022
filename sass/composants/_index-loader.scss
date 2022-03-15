@@ -85,8 +85,8 @@
 
 @keyframes slide-out-fwd-center {
     0% {
-        -webkit-transform: translateZ(1);
-        transform: translateZ(1);
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
         opacity: 1;
     }
     100% {
